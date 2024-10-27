@@ -42,7 +42,7 @@
       .nombre-cliente {
         margin: 0mm;
         margin-top: 0;
-        font-size: 4.5mm !important;
+        font-size: 3.5mm !important;
       }
 
       #thermal-pos {
@@ -50,7 +50,7 @@
         margin: 0 auto;
         max-width: 79mm;
         /* line-height: 6mm; */
-        padding: 3mm;
+        padding: 1mm;
       }
 
       #thermal-pos h2 {
@@ -175,7 +175,7 @@
       }
 
       .estado-deuda {
-        font-size: 8mm !important;
+        font-size: 4mm !important;
       }
 
       .info {
@@ -340,7 +340,7 @@ img#impresoraButton {
         <div id="thermal-pos">
         
         <div class="label">
-             <img class="boton" src="logomarum.png" class="ImganelLogo" width= "60%" id "foto">
+             <img class="boton" src="logomarum.png" class="ImganelLogo" width= "40%" id "foto">
             <br/>
             <p class="info-tienda">
                  Av mi dirección Jr Camilo Carrillo 131 //ref: Frente a la cntraloria.
@@ -356,13 +356,13 @@ img#impresoraButton {
         
         
         <div class="ticket">
-            <b>TICKETT:<br>
+            <b>TICKET:<br>
             <h1 class="nro_boleta" id="nro_boleta_id" ></h1>
          </div>
         <div class="fecharecep">
             <p class="fecha">
                 
-                <b>FECHA RECEPCIOON:<br>
+                <b>FECHA RECEPCION:<br>
                 <b id="fecha"></b>
             <br>
             <b>CLIENTE:<br>
@@ -450,7 +450,7 @@ img#impresoraButton {
             // Acortamos la URL actual
             var shortedURL = await shortURL(currentURL);
             
-            var message = 'Hola!! somos de la lavandería, somos una lavandería que cuida el medio ambiente ♻️♻️♻️♻️♻️, por ello adjuntamos su ticket de atención virtual. Click en el link para ver el ticket 👇🏻👇🏻👇🏻 ' + shortedURL;
+            var message = 'Hola!! somos de la lavandería,  adjuntamos su ticket de atención virtual. Click en el link para ver el ticket 👇🏻👇🏻👇🏻 ' + shortedURL;
             
             var whatsappLink = 'https://api.whatsapp.com/send?phone=' + codigo_pais + telefono + '&text=' + encodeURIComponent(message);
             
