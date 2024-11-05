@@ -270,7 +270,7 @@ img#impresoraButton {
         var nro_boleta = params.has('boleta') ? params.get('boleta') : "---";
         var nombre_cliente = params.has('cliente') ? params.get('cliente') : "==Cliente==";
         var telefono = params.has('telefono') ? params.get('telefono') : "==Cliente==";
-        var codigo_pais = params.has('codigo_pais') ? params.get('codigo_pais') : "==Cliente==";
+        var codigo_pais = params.has('codigo_pais') ? params.get('codigo_pais') : "+51";
         var fecha = params.has('fecha') ? params.get('fecha') : "dd/mm/aaaa hh:mm:ss";
         var fecha_entrega = params.has('fecha_entrega') ? params.get('fecha_entrega') : "hh:mm:ss";
         var total = params.has('total') ? params.get('total') : "";
@@ -460,7 +460,7 @@ img#impresoraButton {
             // Acortamos la URL actual
             var shortedURL = await shortURL(currentURL);
             
-            var message = 'Hola!! somos de la lavandería,  adjuntamos su ticket de atención virtual. Click en el link para ver el ticket 👇🏻👇🏻👇🏻 ' + shortedURL;
+            var message = 'Hola!! somos de la lavandería Marum Clean,  adjuntamos su ticket de atención virtual. Click en el link para ver el ticket 👇🏻👇🏻👇🏻 ' + shortedURL;
             
             var whatsappLink = 'https://api.whatsapp.com/send?phone=' + codigo_pais + telefono + '&text=' + encodeURIComponent(message);
             
