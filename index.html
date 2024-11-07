@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ticket de Compra</title>
-    <style>
+   <style>
 
 .m-0 {
         margin: 0 !important;
@@ -222,10 +222,9 @@
         }
 /* ---------------------------------------------------------------------------------------------- */
 
-.button-box {
-    max-width: 300px;
-    display: flex;
-    justify-content: center;
+.button-container {
+  display: flex;
+  justify-content: center; /* Centrar horizontalmente */
 }
 
 .button-box {
@@ -288,11 +287,6 @@ img#impresoraButton {
         var total_por_pagar = params.has('total_por_pagar') ? params.get('total_por_pagar') : " ";
         var estado = params.has('estado') ? params.get('estado') : "--";
         var total_prendas = params.has('total_prendas') ? params.get('total_prendas') : "--";
-        
-        
-        
-
-        //Recibe los datos de los servicios (separados por comas)
         var cantidades = params.has('cantidades') ? params.get('cantidades') : "";
         var descripciones = params.has('servicios') ? params.get('servicios') : "";
         var detalle = params.has('detalles') ? params.get('detalles') : "";
