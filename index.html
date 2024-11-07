@@ -480,7 +480,7 @@ img#impresoraButton {
 
 
      
-// <script>
+//<script>
 
 
 // Función para imprimir dos tickets---------------------
@@ -494,8 +494,23 @@ img#impresoraButton {
 
 // Asignar la función al evento click del botón de impresión
 //document.getElementById('impresoraButton').addEventListener('click', printTicket);
+
+
      
-   // </script>
+         <script>
+    
+    // Función para imprimir el ticket
+function printTicket() {
+  window.print();
+}
+
+// Asignar la función al evento click del botón de impresión
+document.getElementById('impresoraButton').addEventListener('click', printTicket);
+     
+     
+        
+        
+    </script>
     
     
 
