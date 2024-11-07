@@ -222,9 +222,17 @@
         }
 /* ---------------------------------------------------------------------------------------------- */
 
-.button-container {
-  display: flex;
-  justify-content: center; /* Centrar horizontalmente */
+.button-box {
+    max-width: 300px;
+    display: flex;
+    justify-content: center;  /* Centra los elementos horizontalmente */
+    align-items: center;      /* Centra los elementos verticalmente si es necesario */
+    gap: 10px;                /* Si quieres agregar espacio entre las imágenes */
+}
+
+.button-box img {
+    max-width: 100%;  /* Ajusta el tamaño de las imágenes */
+    height: auto;     /* Mantiene la proporción de las imágenes */
 }
 
 .button-box {
