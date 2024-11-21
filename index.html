@@ -238,11 +238,11 @@
 }
 
 /* Estilo para ocultar los botones en la versión impresa */
-@media print {
-  #whatsappButton,
-  #impresoraButton {
-    display: none;
-  }
+  @media print {
+    #whatsappButton, #impresoraButton {
+        display: none !important;
+    }
+}
 
 
 /* CSS para ocultar las imágenes de WhatsAppButton cuando sharelink=1 está presente en la URL */
