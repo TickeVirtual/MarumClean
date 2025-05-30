@@ -701,7 +701,7 @@ La promoción de lavado al kilo no incluye casacas gruesas o delicadas , toallas
                 }, 3000);
             } else {
                 console.error('Error en la respuesta:', responseData);
-                statusMessage.textContent = `Error: ${responseData.message || 'Problema desconocido'}`;
+                statusMessage.textContent = `Error: ${responseData.message || 'AL PARECER EL NUMERO NO TIENE WHATSAPP, VERIFIQUE POR FAVOR'}`;
                 statusMessage.className = 'error';
                 sendMessageButton.disabled = false;
             }
